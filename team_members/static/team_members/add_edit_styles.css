@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.delete-btn {
+    background-color: white;
+    color: rgb(237, 43, 43);
+}
+.form-container {
+    width: 70%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-container input[type='text'],
+.form-container input[type='email'],
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    /* border-radius: 8px; */
+}
+
+.form-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+}
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+header #branding {
+    float: left;
+}
+header #branding h1 {
+    margin: 0;
+}
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .current a {
+    color: #ffffff;
+    font-weight: bold;
+}
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+.save-btn {
+    background-color: cornflowerblue;
+    color: white;
+}

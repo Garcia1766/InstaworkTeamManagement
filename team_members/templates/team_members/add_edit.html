@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add/Edit Team Member</title>
+    <link rel="stylesheet" href="{% static 'team_members/add_edit_styles.css' %}">
+    <script src="{% static 'team_members/add_edit_script.js' %}" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                {% if object %}
+                <h1><span class="highlight">Edit</span> team member</h1>
+                {% else %}
+                <h1><span class="highlight">Add</span> a team member</h1>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form-demonstration">
+            {% if object %}
+            <p>Edit contact info, location and role.</p>
+            {% else %}
+            <p>Set email, location and role.</p>
+            {% endif %}
+        </div>
+    </div>
+    <div class="form-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="buttons-container">
+                {% if object %}
+                    <button class="delete-btn" onclick="confirmDelete({{ object.id }})" type="button">Delete</button>
+                {% else %}
+                    <span></span>
+                {% endif %}
+                <button type="submit" class="save-btn">Save</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

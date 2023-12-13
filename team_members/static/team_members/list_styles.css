@@ -1,0 +1,129 @@
+.add-icon {
+    display: inline-block;
+    padding: 0px 0px;
+    margin: 0px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight,
+header .current a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.icon {
+    border-radius: 10px;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchBox {
+    padding: 10px;
+    width: 50%;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.team-member-link {
+    align-items: center;
+    color: inherit;
+    display: flex;
+    text-decoration: none;
+}
+
+.team-member {
+    align-items: center;
+    display: flex;
+    flex-basis: 30%;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .team-member {
+        flex-basis: 100%; /* Each card takes full width */
+    }
+}
